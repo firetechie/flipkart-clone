@@ -1,1 +1,20 @@
-<p>header works!</p>
+<header>
+  <div class="navbar navbar-dark bg-primary shadow-sm p-2">
+    <div class="navbar-brand align-item-center d-flex">
+      <a routerLink="/products"
+        ><i class="fas fa-shipping-fast app_icon">&nbsp; </i></a
+      >
+      <a routerLink="/products" class="app_name"><strong>Flipkart</strong></a>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="search products" />
+      </div>
+      <span class="fas fa-search search-icon"></span>
+    </div>
+    <a routerLink="/cart" class="btn btn-primary">
+      <i style="font-size: 30px" class="fas fa-cart-plus"></i>
+      <div style="font-size: 10px" class="badge bg-danger">
+        {{ totalProducts }}
+      </div>
+    </a>
+  </div>
+</header>
